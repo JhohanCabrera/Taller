@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Sistema de Empleados</title>
+	<link rel="stylesheet" type="text/css" href="css/Style.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container"  align="center" id="divc">
+        <div class="row" align="center" >
+	<label for="divc1"><br><h5>Datos Personales</h5></label>
+    <div class="container"  id="divc1">
+        <div class="row">
+            <div class="col">
+                <div class="mb-3">
+                    <label for="nombre" class="form-label" id="nom">Nombre:</label>
+                    <label  class="form-control" id="nombre">Nombre</label>
+                </div>
+                
+                <div class="mb-3">
+                    <label for="ape" class="form-label">Apellido:</label>
+                    <label class="form-control" id="ape" >Apellido</label>
+                </div>
+                
+                <div class="mb-3"> 
+                    <label for="sex" class="form-label">Sexo:</label>
+                    <label class="form-control"  id="sex">sexo</label>
+                </div>
+                
+                <div class="mb-3">
+                    <label for="fna">Fecha de Nacimiento:</label>
+                    <label class="form-control" id="fna">dd-mm-aaaa</label>
+                </div>
+                
+                <div class="mb-3">
+                <label for="fing">Fecha de Ingreso:</label>
+                <label class="form-control" id="fing">dd-mm-aaaa</label>
+                </div>
+            </div>
+            <div class="col">
+                <figure class="figure">
+                    <img src="https://th.bing.com/th/id/R.fbecde3fcde70fdc18b69ae9cf42ab98?rik=QS4fzUPo37MNhQ&pid=ImgRaw&r=0" alt="...">
+                    <figcaption class="figure-caption">Foto del Empleado.</figcaption>
+                  </figure>
+            </div>
+        </div>    
+    </div> 
+
+    <label for="divc2">Salario</label>
+    <div class="container"  id="divc2" align="center">
+        
+        <div class="input-group mb-3">
+            <span class="input-group-text">$</span>
+            <label class="form-control" aria-label="Amount (to the nearest dollar) "align="left" id="salario"></label>
+            <span class="input-group-text">.00</span>
+            <button type="button" class="btn btn-primary" onclick="nuevoSal()">Modificar</button>
+        </div>
+
+    </div>
+
+    
+    
+    <div class="container"  id="divc2" align="center">
+       <label for="divc2"><br><h5>Cálculos</h5></label><br><br> 
+        <div class="row">
+       
+            <div class="mb-3">
+                 <button type="button" class="btn btn-primary" onclick="calcularEdad()" >Calcular Edad</button>
+                <br><br>
+                <div class="col-sm-6">
+                    <label type="text" class="form-control" id="edad"><br></label>
+                </div>
+            </div>
+
+            <div class="mb-3">
+                <button type="button" class="btn btn-primary" onclick="calcularAnt()" >Calcular Antigüedad</button>
+                <br><br>
+                <div class="col-sm-6">
+                    <label type="text" class="form-control" id="ant"><br></label>
+                </div>
+            </div>
+
+            <div class="mb-3">
+                <button type="button" class="btn btn-primary" onclick="prestaciones()">Calcular Prestaciones</button>
+                <br><br>
+                <div class="col-sm-6">
+                    <label type="text" class="form-control" id="pres"><br></label>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container"  id="divc3" align="center">
+        <br>
+        <button type="button" class="btn btn-primary" onclick ="boton1()">Calcular días en la empresa</button>
+        <button type="button" class="btn btn-primary" onclick ="boton2()">Guardar información</button>
+
+    </div>
+    <script type="text/javascript" src="js/functions.js"></script>
+</div>
+</div>
+</body>
+</html>

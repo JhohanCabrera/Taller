@@ -1,0 +1,29 @@
+body{
+	
+	background-color: transparent;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
+#divc{
+	background-color: #C9D3D6;
+	width: 1300px;
+	height: 580px;
+	border-radius: 20px;
+	
+
+}
+
+#divc2{
+	background-color: #C9D3D6;
+	border-radius: 20px;
+	
+
+}
+
+#divc3{
+	background-color: #C9D3D6;
+	border-radius: 20px;
+	
+
+}
